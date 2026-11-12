@@ -45,24 +45,26 @@ export const HeroContent: React.FC = () => {
               transition={{ duration: 1, delay: 0.5 }}
               className="mb-8 flex flex-col items-center"
             >
-              <span className="text-[#111111] uppercase tracking-widest text-xs sm:text-sm font-extrabold mb-3 bg-white/60 px-4 py-1 rounded-full backdrop-blur-sm border border-white/50 shadow-sm">We cordially invite</span>
-              <span className="text-xl sm:text-3xl md:text-4xl font-serif text-[#8B0000] text-center px-4 leading-tight" style={{ textShadow: "0 0 20px rgba(255,255,255,1), 0 0 10px rgba(255,255,255,0.9)" }}>
+              <span className="text-[#8a6a1f] uppercase tracking-[0.35em] text-[10px] sm:text-xs font-semibold mb-3 bg-[#fffdf7]/70 px-5 py-1.5 rounded-full backdrop-blur-sm border border-[#b8942a]/50 shadow-sm">We cordially invite</span>
+              <span className="hero-gold text-xl sm:text-3xl md:text-4xl font-serif italic text-center px-4 leading-tight pb-1">
                 {displayName}
               </span>
             </motion.div>
           )}
-          <span className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-serif tracking-[0.15em] text-[#A68846] uppercase drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
-            SUPUN
+          <span className="hero-gold text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-serif tracking-[0.15em] uppercase leading-none pb-1">
+            SACHINI
           </span>
-          <div className="flex items-center gap-3 opacity-90">
-            <div className="h-[1px] w-8 sm:w-16 bg-[#A68846]"></div>
-            <span className="text-2xl sm:text-4xl font-display italic text-[#A68846] lowercase tracking-widest px-2 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
+          <div className="flex items-center gap-3">
+            <div className="h-px w-10 sm:w-20 bg-gradient-to-r from-transparent via-[#c9a54a] to-[#b8942a]"></div>
+            <span className="w-1.5 h-1.5 rotate-45 bg-[#b8942a]"></span>
+            <span className="hero-gold text-3xl sm:text-5xl font-display px-1 pb-1">
               and
             </span>
-            <div className="h-[1px] w-8 sm:w-16 bg-[#A68846]"></div>
+            <span className="w-1.5 h-1.5 rotate-45 bg-[#b8942a]"></span>
+            <div className="h-px w-10 sm:w-20 bg-gradient-to-l from-transparent via-[#c9a54a] to-[#b8942a]"></div>
           </div>
-          <span className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-serif tracking-[0.15em] text-[#A68846] uppercase drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
-            HIMASARA
+          <span className="hero-gold text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-serif tracking-[0.15em] uppercase leading-none pb-1">
+            MALEEN
           </span>
         </h1>
       </motion.div>

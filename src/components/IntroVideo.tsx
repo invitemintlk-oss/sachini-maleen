@@ -20,7 +20,7 @@ export const IntroVideo: React.FC<IntroVideoProps> = ({ onComplete }) => {
     <div className="fixed inset-0 z-[200] bg-white flex items-center justify-center overflow-hidden">
       <video
         ref={videoRef}
-        src="/generate_a_video_using_attach.mp4"
+        src="/gemini_generated_video_dcf370e6.mp4"
         className={`w-full h-full object-cover transition-opacity duration-1000 ${hasStarted ? 'opacity-100' : 'opacity-0'}`}
         playsInline
         onEnded={onComplete}
@@ -48,7 +48,7 @@ export const IntroVideo: React.FC<IntroVideoProps> = ({ onComplete }) => {
                   The Wedding Invitation
                 </span>
                 <span className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif tracking-[0.15em] text-[#111111] uppercase drop-shadow-[0_2px_10px_rgba(255,255,255,0.4)]">
-                  SUPUN
+                  SACHINI
                 </span>
                 <div className="flex items-center gap-3 opacity-90">
                   <div className="h-[1px] w-8 sm:w-16 bg-[#111111]/60"></div>
@@ -58,7 +58,7 @@ export const IntroVideo: React.FC<IntroVideoProps> = ({ onComplete }) => {
                   <div className="h-[1px] w-8 sm:w-16 bg-[#111111]/60"></div>
                 </div>
                 <span className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif tracking-[0.15em] text-[#111111] uppercase drop-shadow-[0_2px_10px_rgba(255,255,255,0.4)]">
-                  HIMASARA
+                  MALEEN
                 </span>
               </h1>
               <button

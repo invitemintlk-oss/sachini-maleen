@@ -2,15 +2,18 @@ import React from 'react';
 import { motion } from 'motion/react';
 
 const images = [
-  '/pre/WhatsApp Image 2026-10-02 at 23.10.07 (6).jpeg',
-  '/pre/WhatsApp Image 2026-10-02 at 23.10.07 (7).jpeg',
-  '/pre/WhatsApp Image 2026-10-02 at 23.10.07 (8).jpeg',
-  '/pre/WhatsApp Image 2026-10-02 at 23.10.07 (9).jpeg',
-  '/pre/WhatsApp Image 2026-10-02 at 23.10.07 (10).jpeg',
-  '/pre/WhatsApp Image 2026-10-02 at 23.10.07 (11).jpeg',
-  '/pre/WhatsApp Image 2026-10-02 at 23.10.07 (12).jpeg',
-  '/pre/WhatsApp Image 2026-10-02 at 23.10.08 (2).jpeg',
-  '/pre/WhatsApp Image 2026-10-02 at 23.10.08 (3).jpeg',
+  '/pre/DSC06507.jpg',
+  '/pre/DSC06548.jpg',
+  '/pre/DSC06880.jpg',
+  '/pre/DSC06967.jpg',
+  '/pre/ROM03448.jpg',
+  '/pre/ROM03622.jpg',
+  '/pre/ROM03726.jpg',
+  '/pre/ROM03891.jpg',
+  '/pre/ROM03896.jpg',
+  '/pre/ROM04438.jpg',
+  '/pre/ROM04596.jpg',
+  '/pre/ROM04658.jpg',
 ];
 
 export const Gallery: React.FC = () => {

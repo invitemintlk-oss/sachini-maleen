@@ -23,7 +23,7 @@ function LandingPage() {
   const [isMusicPlaying, setIsMusicPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  const weddingDate = new Date('2026-10-24T18:00:00');
+  const weddingDate = new Date('2026-11-25T17:30:00');
 
   const startMusic = () => {
     if (audioRef.current && !isMusicPlaying) {
@@ -92,7 +92,7 @@ function LandingPage() {
       {/* Background Music */}
       <audio
         ref={audioRef}
-        src="/paulyudin-wedding-485932.mp3"
+        src="/jayamangala-gatha.mp3"
         loop
       />
 

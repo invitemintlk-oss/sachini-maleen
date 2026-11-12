@@ -45,21 +45,24 @@ function doGet(e) {
 }
 
 function ensureHeaders(sheetKey, sheet) {
-  // If there are already rows, we don't need to add headers
+  // Existing sheet: just make sure the newer "Guests" column has a header
   if (sheet.getLastRow() > 0) {
+    if (sheetKey === 'rsvp' && !sheet.getRange(1, 5).getValue()) {
+      sheet.getRange(1, 5).setValue('Guests').setFontWeight('bold').setBackground('#f3f3f3');
+    }
     return;
   }
 
   if (sheetKey === 'rsvp') {
-    sheet.appendRow(['Timestamp', 'Name', 'Status', 'Submitted At (ISO)']);
+    sheet.appendRow(['Timestamp', 'Name', 'Status', 'Submitted At (ISO)', 'Guests']);
     
     // Format the header row to make it bold and add a background color
-    const headerRange = sheet.getRange(1, 1, 1, 4);
+    const headerRange = sheet.getRange(1, 1, 1, 5);
     headerRange.setFontWeight("bold");
     headerRange.setBackground("#f3f3f3");
     
     // Auto-resize columns for better readability
-    sheet.autoResizeColumns(1, 4);
+    sheet.autoResizeColumns(1, 5);
     return;
   }
 }
@@ -73,6 +76,7 @@ function buildRow(sheetKey, payload) {
       sanitize(payload.name),
       sanitize(payload.status),
       sanitize(payload.submittedAt),
+      sanitize(payload.guests),
     ];
   }
 

@@ -3,6 +3,7 @@ import { submitToGoogleSheet } from '../googleSheets';
 
 export const RSVPForm: React.FC = () => {
   const [name, setName] = useState('');
+  const [guests, setGuests] = useState(1);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -19,6 +20,7 @@ export const RSVPForm: React.FC = () => {
       await submitToGoogleSheet('rsvp', { 
         name, 
         status, 
+        guests: status === 'Accepts' ? guests : 0,
         submittedAt: new Date().toISOString() 
       });
       setSubmitted(true);
@@ -81,7 +83,9 @@ export const RSVPForm: React.FC = () => {
             <div className="h-px w-16 mx-auto bg-[#B8942A] shadow-[0_0_10px_rgba(255,255,255,1)]" />
           </div>
           <p className="font-sans text-sm font-bold leading-relaxed mb-10 sm:mb-12 mx-auto max-w-md text-[#91763A] uppercase tracking-widest" style={{ textShadow: "0 0 15px rgba(255,255,255,1), 0 0 8px rgba(255,255,255,0.9)" }}>
-            KINDLY RSVP BY 10TH OF OCTOBER 2026
+            Sachini: <a href="tel:0742714613" className="underline-offset-4 hover:underline">0742714613</a>
+            <br />
+            Maleen: <a href="tel:0773564353" className="underline-offset-4 hover:underline">0773564353</a>
           </p>
           <div>
             {submitted ? (
@@ -100,6 +104,34 @@ export const RSVPForm: React.FC = () => {
                   style={{ textShadow: "0 0 10px rgba(255,255,255,0.8)" }}
                   disabled={isSubmitting}
                 />
+                <div className="flex flex-col items-center gap-3 w-full">
+                  <span className="text-[10px] font-extrabold uppercase tracking-[0.4em] text-[#91763A] font-sans" style={{ textShadow: "0 0 10px rgba(255,255,255,0.9)" }}>
+                    Number of guests
+                  </span>
+                  <div className="flex items-center gap-5">
+                    <button
+                      type="button"
+                      aria-label="Fewer guests"
+                      onClick={() => setGuests(g => Math.max(1, g - 1))}
+                      disabled={isSubmitting || guests <= 1}
+                      className="w-10 h-10 rounded-full border border-[#B8942A]/60 bg-white/80 text-[#91763A] text-xl font-bold flex items-center justify-center"
+                    >
+                      −
+                    </button>
+                    <span className="w-12 text-center font-serif text-4xl text-[#91763A]" aria-live="polite" style={{ textShadow: "0 0 15px rgba(255,255,255,1)" }}>
+                      {guests}
+                    </span>
+                    <button
+                      type="button"
+                      aria-label="More guests"
+                      onClick={() => setGuests(g => Math.min(10, g + 1))}
+                      disabled={isSubmitting || guests >= 10}
+                      className="w-10 h-10 rounded-full border border-[#B8942A]/60 bg-white/80 text-[#91763A] text-xl font-bold flex items-center justify-center"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
                 {error && <p className="text-red-400 text-xs font-sans mt-[-10px]">{error}</p>}
                 <div className="flex flex-col items-center gap-4 w-full mt-2">
                   <button 

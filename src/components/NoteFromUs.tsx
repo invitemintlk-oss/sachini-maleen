@@ -46,18 +46,18 @@ export const NoteFromUs: React.FC = () => {
             </div>
             <p className="font-display font-bold italic leading-[1.4] px-2 text-center" style={{ fontSize: "clamp(1.2rem, 3.5vw, 1.8rem)", color: "rgba(158,123,34, 0.9)", marginTop: "-1rem" }}>
               <span className="block mt-4 mb-4 text-[#B8942A] uppercase tracking-wider font-sans text-sm md:text-base">
-                Mr. Emmanuel Appuhami &amp; Mrs. Sandamali Fernando<br/>
+                Mr. Sunil Abeysooriya &amp; Mrs. Abeysooriya<br/>
                 together with<br/>
-                Late Mr. Lesley Fernando &amp; Mrs. Dilukshi Perera
+                The Late Mr. Ratnasiri De Alwis &amp; Mrs. De Alwis
               </span>
               <span className="uppercase tracking-wide font-sans text-xs md:text-sm leading-relaxed block mt-6 mb-6">
-                Request the honour of the presence of to celebrate the wedding of their children
+                With hearts filled with joy, invite you to celebrate the wedding of their beloved children
               </span>
               <span className="font-serif text-3xl md:text-5xl text-[#B8942A] block my-6">
-                Supun &amp; Himasara
+                Sachini &amp; Maleen
               </span>
               <span className="uppercase tracking-wide font-sans text-xs md:text-sm leading-relaxed block mt-6 text-[#B8942A]">
-                Join us as we celebrate love, laughter and the beginning of a beautiful journey together
+                Your presence and blessings would make this occasion truly special
               </span>
             </p>
             <div className="mt-8 sm:mt-10">
@@ -69,7 +69,7 @@ export const NoteFromUs: React.FC = () => {
                 <div className="h-px w-12 sm:w-16" style={{ background: "linear-gradient(270deg, transparent, #A0A0A0cc)" }} />
               </div>
               <p className="font-serif text-2xl sm:text-3xl" style={{ color: "#B8942A" }}>
-                Supun &amp; Himasara
+                Sachini &amp; Maleen
               </p>
             </div>
           </motion.div>

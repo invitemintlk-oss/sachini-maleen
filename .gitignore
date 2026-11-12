@@ -25,3 +25,6 @@ dist-ssr
 
 public/*.zip
 public/og-image.jpg
+
+# Full-size photo originals (web copies live in public/pre)
+originals/
