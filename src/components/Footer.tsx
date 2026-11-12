@@ -43,10 +43,7 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="mt-12 text-xs font-sans text-gray-900/50 uppercase tracking-widest font-medium">
-          Organz by - <a href="https://fb.com/rositarohan" target="_blank" rel="noopener noreferrer" className="hover:text-[#A68846] transition-colors font-bold">ROSITAROHAN PHOTOGRAPHY</a>
-        </div>
-        <p className="text-[#91763A] text-xs mt-2 font-sans tracking-wider">
+        <p className="text-[#91763A] text-xs mt-12 font-sans tracking-wider">
           Want a beautiful wedding website like this? Create yours with{' '}
           <a target="_blank" rel="noreferrer" className="text-[#B8942A] font-semibold underline underline-offset-2 hover:text-[#7a5a17] transition-colors" href="https://wa.me/94707819074">invitemint</a>
         </p>
