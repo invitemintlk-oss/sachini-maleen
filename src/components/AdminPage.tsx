@@ -37,7 +37,7 @@ export const AdminPage: React.FC = () => {
     // Use the combined displayName in the URL so the landing page can read it directly
     const url = `${window.location.origin}/${encodeURIComponent(displayName)}`;
     
-    const message = `Dear ${displayName} ❤️\n\nWith joyful hearts, we warmly invite you to celebrate one of the most special days of our lives as we begin our journey together.\n\nPlease view our wedding invitation and all the event details through the link below 🌐:\n\n${url}\n\nYour presence would truly mean the world to us, and we would be honored to celebrate this beautiful moment together.\n\nWith love,\n❤️ Supun & Himasara`;
+    const message = `Dear ${displayName} ❤️\n\nWith joyful hearts, we warmly invite you to celebrate one of the most special days of our lives as we begin our journey together.\n\nPlease view our wedding invitation and all the event details through the link below 🌐:\n\n${url}\n\nYour presence would truly mean the world to us, and we would be honored to celebrate this beautiful moment together.\n\nWith love,\n❤️ Sachini & Maleen`;
     
     setGeneratedLink(url);
     setGeneratedMessage(message);

@@ -2,18 +2,17 @@ import React from 'react';
 import { motion } from 'motion/react';
 
 const images = [
-  '/pre/DSC06507.jpg',
-  '/pre/DSC06548.jpg',
-  '/pre/DSC06880.jpg',
-  '/pre/DSC06967.jpg',
-  '/pre/ROM03448.jpg',
-  '/pre/ROM03622.jpg',
-  '/pre/ROM03726.jpg',
-  '/pre/ROM03891.jpg',
-  '/pre/ROM03896.jpg',
-  '/pre/ROM04438.jpg',
-  '/pre/ROM04596.jpg',
-  '/pre/ROM04658.jpg',
+  '/pre/DSC06507.webp',
+  '/pre/DSC06548.webp',
+  '/pre/DSC06880.webp',
+  '/pre/DSC06967.webp',
+  '/pre/ROM03448.webp',
+  '/pre/ROM03622.webp',
+  '/pre/ROM03726.webp',
+  '/pre/ROM03896.webp',
+  '/pre/ROM04438.webp',
+  '/pre/ROM04596.webp',
+  '/pre/ROM04658.webp',
 ];
 
 export const Gallery: React.FC = () => {
@@ -42,9 +41,6 @@ export const Gallery: React.FC = () => {
               <line x1="134" y1="12" x2="220" y2="12" stroke="#A0A0A0" strokeWidth="0.75" strokeOpacity="0.55" />
             </svg>
           </div>
-          <h2 className="font-display text-4xl sm:text-5xl md:text-[3.5rem] font-bold italic text-[#91763A]" style={{ textShadow: "0 2px 10px rgba(255,255,255,0.9)" }}>
-            Pre-Shoot Moments
-          </h2>
         </motion.div>
       </div>
 

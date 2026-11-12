@@ -1,4 +1,4 @@
-const SPREADSHEET_ID = '1N4vnOVFVEk4-SwT-nwgvtF_R6E02VLz3ynLcBgXY5F0';
+const SPREADSHEET_ID = '1Z7FNYEP2ZZOMOIHHTtEkV1tY8e8JNUYz1DsCenpmJk4';
 const SHEET_NAMES = {
   rsvp: 'rsvp',
 };

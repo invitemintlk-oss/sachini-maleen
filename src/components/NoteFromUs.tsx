@@ -8,13 +8,6 @@ export const NoteFromUs: React.FC = () => {
       <div className="pointer-events-none absolute inset-x-0 top-0 h-28" style={{ background: "linear-gradient(180deg, rgba(160,160,160,0.05) 0%, transparent 100%)" }} aria-hidden="true" />
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(160,160,160,0.25), transparent)" }} aria-hidden="true" />
       
-      {/* Background Texture */}
-      <img 
-        src="/white_embossed_mandala.png" 
-        alt="" 
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120vw] max-w-[1200px] opacity-[0.15] mix-blend-multiply pointer-events-none" 
-      />
-      
       <div className="relative mx-auto max-w-5xl">
         <motion.div 
           className="text-center mb-12 sm:mb-14"

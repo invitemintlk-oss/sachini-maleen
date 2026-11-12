@@ -1,8 +1,17 @@
 import React, { useState } from 'react';
+import { useParams, useSearchParams } from 'react-router-dom';
 import { submitToGoogleSheet } from '../googleSheets';
 
 export const RSVPForm: React.FC = () => {
-  const [name, setName] = useState('');
+  // Pre-fill with the invited guest's name (incl. prefix) from their personal link,
+  // e.g. /Mr.%20Suresh%20Dissanayake or ?prefix=Mr.&name=Suresh — same source as the hero.
+  const { guestName } = useParams();
+  const [searchParams] = useSearchParams();
+  const queryPrefix = searchParams.get('prefix');
+  const queryName = searchParams.get('name');
+  const invitedName = guestName || (queryPrefix && queryName ? `${queryPrefix} ${queryName}` : '');
+
+  const [name, setName] = useState(invitedName.trim());
   const [guests, setGuests] = useState(1);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);

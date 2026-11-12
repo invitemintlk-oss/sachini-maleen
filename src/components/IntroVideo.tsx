@@ -20,7 +20,9 @@ export const IntroVideo: React.FC<IntroVideoProps> = ({ onComplete }) => {
     <div className="fixed inset-0 z-[200] bg-white flex items-center justify-center overflow-hidden">
       <video
         ref={videoRef}
-        src="/gemini_generated_video_dcf370e6.mp4"
+        src="/intro.mp4"
+        poster="/intro-poster.webp"
+        preload="auto"
         className={`w-full h-full object-cover transition-opacity duration-1000 ${hasStarted ? 'opacity-100' : 'opacity-0'}`}
         playsInline
         onEnded={onComplete}
@@ -36,7 +38,7 @@ export const IntroVideo: React.FC<IntroVideoProps> = ({ onComplete }) => {
           >
             <div className="absolute inset-0 w-full h-full">
               <img 
-                src="/ChatGPT Image Aug 6, 2026, 05_51_32 PM.png" 
+                src="/intro-cover.webp" 
                 alt="Intro Background" 
                 className="w-full h-full object-cover"
               />

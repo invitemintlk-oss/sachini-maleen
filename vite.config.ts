@@ -3,8 +3,8 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 import {defineConfig, loadEnv, type Plugin} from 'vite';
 
-const SHARE_FAVICON_PATH = '/2026.07.16-20260612T100209Z-3-001/my/RWP01402.jpg';
-const DEFAULT_SITE_URL = 'https://gimhan-teneeshiya-weddinginvitation.vercel.app';
+const SHARE_FAVICON_PATH = '/favicon.png';
+const DEFAULT_SITE_URL = 'https://sachini-maleen-weddinginvitation.vercel.app';
 
 function getSiteUrl(env: Record<string, string>): string {
   const configured = env.VITE_SITE_URL?.trim();

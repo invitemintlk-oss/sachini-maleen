@@ -82,9 +82,11 @@ function LandingPage() {
         loop
         muted
         playsInline
+        preload="auto"
+        poster="/bg-poster.webp"
         className="fixed top-0 left-0 w-screen h-screen object-cover -z-10"
       >
-        <source src="/Animation_circles_rotating_samah…_202608061757.mp4" type="video/mp4" />
+        <source src="/bg.mp4" type="video/mp4" />
       </video>
 
       <FloatingPetals />
@@ -93,6 +95,7 @@ function LandingPage() {
       <audio
         ref={audioRef}
         src="/jayamangala-gatha.mp3"
+        preload="none"
         loop
       />
 
