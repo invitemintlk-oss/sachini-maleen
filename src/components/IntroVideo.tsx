@@ -20,8 +20,8 @@ export const IntroVideo: React.FC<IntroVideoProps> = ({ onComplete }) => {
     <div className="fixed inset-0 z-[200] bg-white flex items-center justify-center overflow-hidden">
       <video
         ref={videoRef}
-        src="/intro.mp4"
-        poster="/intro-poster.webp"
+        src="/intro.mp4?v=2"
+        poster="/intro-poster.webp?v=2"
         preload="auto"
         className={`w-full h-full object-cover transition-opacity duration-1000 ${hasStarted ? 'opacity-100' : 'opacity-0'}`}
         playsInline
